@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTableWidget" name="tableWidget_jobs">
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="tabKeyNavigation">
+       <bool>false</bool>
+      </property>
+      <property name="horizontalScrollMode">
+       <enum>QAbstractItemView::ScrollPerPixel</enum>
+      </property>
+      <column>
+       <property name="text">
+        <string>打印机名称</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>计算机名称</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>用户名称</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>文件名称</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>页数</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>份数</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>打印时间</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>是否经过指纹验证</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>验证结果</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>cups打印结果</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>fw打印结果</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item alignment="Qt::AlignVCenter">
+     <widget class="QPushButton" name="pushButton">
+      <property name="text">
+       <string>get history</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="comboBox"/>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="checkBox">
+      <property name="text">
+       <string>是否认证</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
