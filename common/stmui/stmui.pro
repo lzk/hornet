@@ -8,9 +8,8 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = hxpl3zsmui
-INCLUDEPATH += $${PWD}/../cct
-
+include("../pro.pri")
+TARGET = $${TARGET_stmui}
 TEMPLATE = app
 
 DEFINES += "HORNET=1"
@@ -18,15 +17,20 @@ DEFINES += "HORNET=1"
 include("../jkinterface/jkinterface.pri")
 include("../statusmonitor/statusmonitor.pri")
 include(../common/common.pri)
-include(../jklib/jklib.pri)
+include(jklib/jklib.pri)
+SOURCES += \
+    uiconfig.cpp
 
+HEADERS  += \
+    uiconfig.h
 
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
     about.cpp \
 
-HEADERS  += mainwindow.h \
+HEADERS  += \
+    mainwindow.h \
     about.h \
 
 FORMS    += mainwindow.ui \

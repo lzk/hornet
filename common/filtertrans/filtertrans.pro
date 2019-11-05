@@ -5,8 +5,8 @@ CONFIG += c++11
 #CONFIG += c++11 console
 CONFIG -= app_bundle gui
 
-TARGET = hxpl3zsm
-INCLUDEPATH += $${PWD}/../cct
+include("../pro.pri")
+TARGET = $${TARGET_filtertrans}
 
 include(../filterlib/filterlib.pri)
 

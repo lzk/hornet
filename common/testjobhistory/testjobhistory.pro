@@ -8,9 +8,9 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
+include("../pro.pri")
 TARGET = testjobhistory
 TEMPLATE = app
-INCLUDEPATH += $${PWD}/../cct
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which has been marked as deprecated (the exact warnings

@@ -7,9 +7,9 @@
 QT       -= gui
 #QT       -= core gui
 
-TARGET = hxpl3z
+include("../pro.pri")
+TARGET = $${TARGET_filterlib}
 TEMPLATE = lib
-INCLUDEPATH += $${PWD}/../cct
 
 CONFIG += shared
 
